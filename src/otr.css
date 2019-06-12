@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-:root {
-	--rotation-angle: 0deg
-}
-
 html, body {
 	margin: 0;
 	padding: 0;

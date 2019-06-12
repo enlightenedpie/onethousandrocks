@@ -22,7 +22,7 @@ export default class OTR extends React.Component {
 
     makeOneRock() {
         let {counter} = this.state
-        if (counter >= 1001) return false
+        if (counter >= 1001) return counter
         let num = Math.floor(500 + Math.random() * 900),
             obj = {
                 x: Math.floor(Math.random() * (95 - 5 +1)) + 5,

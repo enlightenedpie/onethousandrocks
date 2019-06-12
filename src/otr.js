@@ -1,12 +1,13 @@
 import React from 'react'
 import './otr.css'
 
-const OneRock = ({x,y,count}) => {
+const OneRock = ({x,y,count,deg}) => {
     return (
         <div id={"otr"+count} className={"onerock"} style={{
             left: x+'%',
             top: y+'%',
-            zIndex: count
+            zIndex: count,
+            transform: "rotate3d(0,0,1,"+deg+"deg)"
         }}>
             <img alt="One Rock" src={count === 30 ? "/ima/thirtyrock.png" : "/ima/onerock.png"}/>
         </div>

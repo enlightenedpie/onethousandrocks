@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--rotation-angle: 0deg
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -34,15 +38,16 @@ one-thousand-rocks {
 	width: 7.5%;
 	position: absolute;
 	transform-origin: 50% 50%;
-	-webkit-animation: 300ms ease-in-out 0s both grow;
-	-moz-animation: 300ms ease-in-out 0s both grow;
-	animation: 300ms ease-in-out 0s both grow;
 }
 
-img {
+.onerock img {
 	display: block;
 	width: 100%;
 	height: auto;
+	transform-origin: 50% 50%;
+	-webkit-animation: 250ms ease-in-out 0s both grow;
+	-moz-animation: 250ms ease-in-out 0s both grow;
+	animation: 250ms ease-in-out 0s both grow;
 }
 
 @media only screen and (max-width: 767px) {
@@ -54,17 +59,17 @@ img {
 @-webkit-keyframes grow {
 	0% {
 		opacity: 0;
-        transform: scale(0);
+        transform: scale3d(0,0,1);
 	}
     25% {
 		opacity: 1;
-        transform: scale(1.1);
+		transform: scale3d(1.1,1.1,1);
 	}
     50% {
-		transform: scale(.95);
+		transform: scale3d(.95,.95,1);
 	}
     100% {
-		transform: scale(1);
+		transform: scale3d(1,1,1);
 	}
 }
 

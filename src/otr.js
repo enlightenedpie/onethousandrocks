@@ -9,7 +9,7 @@ const OneRock = ({x,y,count,deg}) => {
             zIndex: count,
             transform: "rotate3d(0,0,1,"+deg+"deg) translate3d(-50%,-50%,0)"
         }}>
-            <img alt="One Rock" src={count === 30 ? "/ima/thirtyrock.png" : "/ima/onerock.png"}/>
+            <img alt="" src={count === 30 ? "/ima/thirtyrock.png" : "/ima/onerock.png"}/>
         </div>
     )
 }

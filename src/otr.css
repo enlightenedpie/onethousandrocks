@@ -5,8 +5,8 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	background-color: rgba(241, 241, 241,1);
 	font-size: 20px;
@@ -32,7 +32,6 @@ one-thousand-rocks {
 
 .onerock {
 	width: 7.5%;
-	background-size: 100%;
 	position: absolute;
 	transform-origin: 50% 50%;
 	-webkit-animation: 300ms ease-in-out 0s both grow;
@@ -44,6 +43,12 @@ img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+	.onerock {
+		width: 10%;
+	}
 }
 
 @-webkit-keyframes grow {

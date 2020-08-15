@@ -41,6 +41,8 @@ one-thousand-rocks {
 	width: 7.5%;
 	position: absolute;
 	transform-origin: 50% 50%;
+	cursor: pointer;
+	transition: transform 100ms ease-in-out;
 }
 
 .onerock img {

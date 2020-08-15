@@ -15,6 +15,7 @@ const OneRock = ({ror,x,y,count,deg}) => {
             onTouchStart={(e) => {setPressed(true);}}
             onMouseUp={(e) => {setPressed(false);}}
             onTouchEnd={(e) => {setPressed(false);}}
+            onDragEnd={(e) => {setPressed(false);}}
         >
             <img alt="" src={count === 30 ? "/ima/thirtyrock.png" : "/ima/onerock.png"}/>
         </div>
@@ -46,7 +47,7 @@ export default class OTR extends React.Component {
 
     makeOneRock() {
         let {counter} = this.state
-        if (counter >= 1001) return counter
+        if (counter >= 1000) return counter
         let num = Math.floor(500 + Math.random() * 900),
             obj = {
                 x: Math.floor(Math.random() * (95 - 5 +1)) + 5,

@@ -1,3 +1,9 @@
+@media(prefers-color-scheme: dark) {
+	body {
+		background-color: rgba(66,66,66,1);
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -13,7 +19,7 @@ html, body {
 }
 
 one-thousand-rocks {
-	display: block; /* Y U NO 'display: Rock */
+	display: block; /* Y U NO 'display: Rock' ???!!!?!?! */
 	width: 100%;
 	height: 100%;
 	position: relative;

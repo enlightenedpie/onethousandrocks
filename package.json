@@ -9,6 +9,7 @@
     "react-scripts": "^3.4.3"
   },
   "scripts": {
+    "commit": "git add -A && git commit -a && git push",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

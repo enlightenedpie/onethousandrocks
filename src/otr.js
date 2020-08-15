@@ -9,7 +9,7 @@ const OneRock = ({ror,x,y,count,deg}) => {
                 left: x+'%',
                 top: y+'%',
                 zIndex: count,
-                transform: "rotate3d(0,0,1,"+deg+"deg) translate3d(-50%,-50%,0)" + (pressed ? ' scale3d(1.1,1.1,1)' : '')
+                transform: "rotate3d(0,0,1,"+deg+"deg) translate3d(-50%,-50%,0)" + (pressed ? " scale3d(1.1,1.1,1)" : '')
             }}
             onMouseDown={(e) => {setPressed(true);}}
             onTouchStart={(e) => {setPressed(true);}}
